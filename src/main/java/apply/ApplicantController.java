@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class ApplicantController {
 
     // GET Request
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = {"", "/"}, method = RequestMethod.GET)
     public String rootGET() {
         return "apply";
     }
